@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import Home from "./components/home";
 import Post from "./components/post";
 import Profile from "./components/profile";
+import PostItem from "./components/postItems";
 
 const App = () => {
     return (
@@ -37,6 +38,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="posts" element={<Post />}></Route>
+                    <Route path="posts/:id" element={<PostItem />}></Route>
                     <Route path="profile" element={<Profile />}></Route>
                 </Routes>
             </div>
